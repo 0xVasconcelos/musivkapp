@@ -4,7 +4,8 @@ This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MusiVK</title>
@@ -30,8 +31,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <!--
+</head>
+<!--
   BODY TAG OPTIONS:
   =================
   Apply one or more of the following classes to get the
@@ -51,217 +52,179 @@ scratch. This page gets rid of all links and provides the needed markup only.
   |               | sidebar-mini                            |
   |---------------------------------------------------------|
   -->
-  <body class="hold-transition skin-blue sidebar-mini">
+
+<body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
 
-      <!-- Main Header -->
-      <header class="main-header">
+        <!-- Main Header -->
+        <header class="main-header">
 
-        <!-- Logo -->
-        <a href="index2.html" class="logo">
-          <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>A</b>LT</span>
-          <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg">Musi<b>VK</b></span>
-        </a>
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">M<b>VK</b></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">Musi<b>VK</b></span>
+            </a>
 
-        <!-- Header Navbar -->
-        <nav class="navbar navbar-static-top" role="navigation">
-          <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Toggle navigation</span>
-          </a>
-          <!-- Navbar Right Menu -->
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-
-
-              <!-- Notifications Menu -->
-              <li class="dropdown notifications-menu">
-                <!-- Menu toggle button -->
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning">API</span>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
                 </a>
-                <ul class="dropdown-menu">
-                  <li class="header">API version</li>
-                  <li>
-                    <!-- Inner Menu: contains the notifications -->
-                    <ul class="menu">
-                      <li><!-- start notification -->
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> MusiVK API version 1.0.2
-                        </a>
-                      </li><!-- end notification -->
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+
+
+                        <!-- Notifications Menu -->
+                        <li class="dropdown notifications-menu">
+                            <!-- Menu toggle button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="label label-warning">API</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">API version</li>
+                                <li>
+                                    <!-- Inner Menu: contains the notifications -->
+                                    <ul class="menu">
+                                        <li>
+                                            <!-- start notification -->
+                                            <a href="#">
+                                                <i class="fa fa-users text-aqua"></i> MusiVK API version 1.0.2
+                                            </a>
+                                        </li>
+                                        <!-- end notification -->
+                                    </ul>
+                                </li>
+                                <!-- <li class="footer"><a href="#">View all</a></li> -->
+                            </ul>
+                        </li>
+
+                        <!-- Control Sidebar Toggle Button -->
+
                     </ul>
-                  </li>
-                  <!-- <li class="footer"><a href="#">View all</a></li> -->
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+
+
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu">
+                    <li class="header">About</li>
+                    <!-- Optionally, you can add icons to the links -->
+                    <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
+                    <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+                    <li class="treeview">
+                        <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="#">Link in level 2</a></li>
+                            <li><a href="#">Link in level 2</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
 
-              <!-- Control Sidebar Toggle Button -->
-
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <!-- Left side column. contains the logo and sidebar -->
-      <aside class="main-sidebar">
-
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-
-          <!-- Sidebar user panel (optional) -->
-          <div class="user-panel">
-            <div class="pull-left image">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-            </div>
-            <div class="pull-left info">
-              <p>Alexander Pierce</p>
-              <!-- Status -->
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-          </div>
-
-          <!-- search form (Optional) -->
-          <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-              </span>
-            </div>
-          </form>
-          <!-- /.search form -->
-
-          <!-- Sidebar Menu -->
-          <ul class="sidebar-menu">
-            <li class="header">HEADER</li>
-            <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-            <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
-            </li>
-          </ul><!-- /.sidebar-menu -->
-        </section>
-        <!-- /.sidebar -->
-      </aside>
-
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-          <h1>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header" id="headerArea">
+                <h1>
             Welcome to MusiVK!
-            <small>Download your favorites songs!</small>
+            <small>Download your favorite songs!</small>
           </h1>
 
-        </section>
+            </section>
 
-        <!-- Main content -->
-        <section class="content">
+            <!-- Main content -->
+            <section class="content">
+                <div id="searchArea">
+                    <!-- Your Page Content Here -->
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                        </div>
+                        <!-- /.box-header -->
+                        <!-- form start -->
 
-          <!-- Your Page Content Here -->
-          <div class="box box-primary">
-                <div class="box-header with-border">
-                </div><!-- /.box-header -->
-                <!-- form start -->
-                <form role="form">
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Music name, artist, album...</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Music name, artist, album...</label>
+                                <input type="name" class="form-control" id="searchName" placeholder="">
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="overlay" id="searchOverlay" style="display: none;">
+                            <i class="fa fa-refresh fa-spin"></i>
+                        </div>
+                        <div class="box-footer">
+                            <button id="searchButton" class="btn btn-primary">Search</button>
+                        </div>
+
                     </div>
-                  </div><!-- /.box-body -->
+                </div>
+                <div id="songArea">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Search result(% songs found)</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th style="width: 10px"><i class="fa fa-bullhorn"></i></th>
+                                        <th>Music name</th>
+                                        <th>Artist</th>
+                                        <th style="width: 50px">Duration</th>
+                                        <th style="width: 40px">Download</th>
 
-                  <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Search</button>
-                  </div>
-                </form>
-              </div>
+                                    </tr>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Through Her Eyes</td>
+                                        <td>Dream Theater</td>
+                                        <td><span class="badge bg-green">12:03</span></td>
+                                        <td><span class="badge bg-red">Download <i class="fa fa-save"></i></span></td>
+                                    </tr>
 
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-        </section><!-- /.content -->
-      </div><!-- /.content-wrapper -->
+                </div>
 
-      <!-- Main Footer -->
-      <footer class="main-footer">
-        <!-- To the right -->
-        <div class="pull-right hidden-xs">
-
+            </section>
+            <!-- /.content -->
         </div>
-        <!-- Default to the left -->
-        <strong>MusiVK, 2015.</strong>  | View on  <a href="https://github.com/lucaslg26">GitHub</a> | <a href="https://github.com/lucaslg26/musivk"> Lucas Vasconcelos</a>
-      </footer>
+        <!-- /.content-wrapper -->
 
-      <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-dark">
-        <!-- Create the tabs -->
-        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-          <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-          <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <!-- Home tab content -->
-          <div class="tab-pane active" id="control-sidebar-home-tab">
-            <h3 class="control-sidebar-heading">Recent Activity</h3>
-            <ul class="control-sidebar-menu">
-              <li>
-                <a href="javascript::;">
-                  <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-                  <div class="menu-info">
-                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-                    <p>Will be 23 on April 24th</p>
-                  </div>
-                </a>
-              </li>
-            </ul><!-- /.control-sidebar-menu -->
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!-- To the right -->
+            <div class="pull-right hidden-xs">
 
-            <h3 class="control-sidebar-heading">Tasks Progress</h3>
-            <ul class="control-sidebar-menu">
-              <li>
-                <a href="javascript::;">
-                  <h4 class="control-sidebar-subheading">
-                    Custom Template Design
-                    <span class="label label-danger pull-right">70%</span>
-                  </h4>
-                  <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                  </div>
-                </a>
-              </li>
-            </ul><!-- /.control-sidebar-menu -->
+            </div>
+            <!-- Default to the left -->
+            <strong>MusiVK, 2015.</strong> | View on <a href="https://github.com/lucaslg26">GitHub</a> | <a href="https://github.com/lucaslg26/musivk"> Lucas Vasconcelos</a>
+        </footer>
 
-          </div><!-- /.tab-pane -->
-          <!-- Stats tab content -->
-          <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div><!-- /.tab-pane -->
-          <!-- Settings tab content -->
-          <div class="tab-pane" id="control-sidebar-settings-tab">
-            <form method="post">
-              <h3 class="control-sidebar-heading">General Settings</h3>
-              <div class="form-group">
-                <label class="control-sidebar-subheading">
-                  Report panel usage
-                  <input type="checkbox" class="pull-right" checked>
-                </label>
-                <p>
-                  Some information about this general settings option
-                </p>
-              </div><!-- /.form-group -->
-            </form>
-          </div><!-- /.tab-pane -->
-        </div>
-      </aside><!-- /.control-sidebar -->
-      <!-- Add the sidebar's background. This div must be placed
+
+        <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
-      <div class="control-sidebar-bg"></div>
-    </div><!-- ./wrapper -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
 
     <!-- REQUIRED JS SCRIPTS -->
 
@@ -271,10 +234,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
     <script src="dist/js/app.min.js"></script>
+    <script src="dist/js/musivk.js"></script>
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
          Both of these plugins are recommended to enhance the
          user experience. Slimscroll is required when using the
          fixed layout. -->
-  </body>
+</body>
+
 </html>
