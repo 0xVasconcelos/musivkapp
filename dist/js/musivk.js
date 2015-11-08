@@ -7,6 +7,12 @@ $( "#searchButton" ).click(function() {
             console.log(data);
             $('#searchArea').hide();
             $('#headerArea').hide();
+            for(var i in data){
+                $('#tableArea').append('<tr> <td><button id="previewButton" onclick="playPreview(\'' + data[i].url + '\')"><i class="fa fa-play"></i></button></td><td>' + data[i].title + '</td><td>' + data[i].artist + '</td><td><span class="badge bg-green">' + data[i].duration + '</span></td><td><span class="badge bg-red">Download <i class="fa fa-save"></i></span></td></tr>');
+
+            }
+            $('#songsFound').append(data.length);
+            $('#songArea').show();
         });
     }
     else{
@@ -15,3 +21,14 @@ $( "#searchButton" ).click(function() {
 
 
 });
+
+var audioPreview;
+
+function playPreview(url){
+    if(audioPreview){
+        audioPreview.pause();
+    }
+    audioPreview = new Audio(url);
+    audioPreview.play();
+
+}
