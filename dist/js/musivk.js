@@ -9,7 +9,7 @@ $("#searchButton").click(function () {
                 $('#searchArea').hide();
                 $('#headerArea').hide();
                 for (var i in data) {
-                    $('#tableArea').append('<tr> <td><button id="previewButton" onclick="playPreview(\'' + data[i].url + '\')"><i class="fa fa-play"></i></button></td><td>' + data[i].title + '</td><td>' + data[i].artist + '</td><td><span class="badge bg-green">' + data[i].duration + '</span></td><td><span class="badge bg-red">Download <i class="fa fa-save"></i></span></td></tr>');
+                    $('#tableArea').append('<tr> <td><button id="previewButton" onclick="playPreview(\'' + data[i].url + '\')"><i class="fa fa-play"></i></button></td><td>' + data[i].title + '</td><td>' + data[i].artist + '</td><td>' + secToDur(data[i].duration) + '</td><td><button>Download</button></td></tr>');
 
                 }
                 $('#songsFound').append(data.length);
@@ -37,3 +37,16 @@ function playPreview(url) {
     audioPreview.play();
 
 }
+
+function secToDur(s) {
+			var sec_num = parseInt(s, 10);
+			var hours   = Math.floor(sec_num / 3600);
+			var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+			var seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+			if (hours   < 10) {hours   = "0"+hours;}
+			if (minutes < 10) {minutes = "0"+minutes;}
+			if (seconds < 10) {seconds = "0"+seconds;}
+			var time    = (hours=='00' ? '' : hours+':')+minutes+':'+seconds;
+			return time;
+		}
